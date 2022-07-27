@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "airflow-practice"
+version = "0.1.0"
+description = ""
+authors = ["Serhii Dimchenko <serhii.dimchenko@pm.bet>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+apache-airflow = { version = "2.3.3", extras = ["postgres"] }
+Werkzeug = "2.0.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
