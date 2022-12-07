@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from pendulum import today
 
-from common.default_args import default_args
+from helpers.default_args import default_args
 
 
 def _sample_callable(name: str) -> None:

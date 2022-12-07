@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.empty import EmptyOperator
 from pendulum import yesterday
 
-from common.default_args import default_args
+from helpers.default_args import default_args
 
 with DAG(
         dag_id="dummy_dag",
