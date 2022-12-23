@@ -15,6 +15,7 @@ x-airflow-common:
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW_CONN_DEFAULT_DATABASE: postgres://postgres:postgres@data:5432
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
